@@ -1,0 +1,65 @@
+1. 공유할 레포지토리 주소
+https://github.com/jungsun-web/test-up.git
+
+왼쪽에 콜라보레이션-이메일 초대하기-수락하기 
+
+-------------------------------------------------------
+
+깃설치 한 후
+폴더를 하나 만들고 그 폴더에서 마우스 오른쪽 :   open bash here 실행
+
+*참고*
+git --version
+파워셀에서도 확인가능
+---------------------------------------------
+
+1.  git init
+ :초기화 뜻
+ : 결과 -비어있는 .git폴더가 생김
+[.git]폴더에는 Git으로 생성한 버전들의 정보와 원격저장소 주소 등이 들어 있음
+[.git] 폴더를 로컬저장소라고 부름.
+
+
+
+2. git remote add origin 레포지토리 주소
+주소 : https://github.com/jungsun-web/test-up.git
+: 레포지토리에 접속함.
+
+
+3.  커밋-(변경사항저장)
+  : 첫 번째 커밋 만들기
+        Git에서는 각각 생성된  버전을 커밋Commit이라고 부름.
+   예:   first.html, kk.txt
+
+------------------------------------------------
+
+버전 관리를 위해 내 정보를 등록.
+각 버전을 누가 만들었는지 알아야 협업가능.
+
+git config --global user.email “sun5sun@hanmail.net”
+git config --global user.name “jungsun”
+
+git add ljs.txt
+git commit -m “사이트 설명 추가"
+
+
+-ljs.txt를 바꾸면 계속 업뎃이 됨
+1 file changed, 1 insertion(+)   : 두번째 버전이 됨
+
+--------------
+버전 다시 되도리기, 다시 돌아오기
+--------------------
+git log
+-파일 정보가 나옴.
+commit 000  (7자리)   
+commit 000 파일이 있음
+: 돌아갈 파일명 확인
+
+git checkout 000000 (돌아갈 파일명)
+HEAD is now at 00000 :  사이트 설명 추가’라는 텍스트가 보이면 성공입니다.
+첫번째커밋으로 컴백
+
+git checkout -
+:최신 커밋으로 감
+
+
