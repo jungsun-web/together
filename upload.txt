@@ -43,7 +43,7 @@ gi
 2. git add . (파일 다)
    git kk.txt (특정 파일)
 
-3. git state   :상태확인
+3. git status   :상태확인
 
 4. git commit -m "메시지, 주석"
 
